@@ -10,6 +10,7 @@ public class MouseActions {
 
 	public static void main(String[] args) throws Exception {
 		WebDriver driver = new FirefoxDriver();
+		//this statement will open the ebay website
 		driver.get("http://ebay.com");
 		WebElement myEbay = driver.findElement(By.className("gh-eb-li-a"));
 
