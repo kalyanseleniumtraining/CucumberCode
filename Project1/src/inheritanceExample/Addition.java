@@ -2,6 +2,7 @@ package inheritanceExample;
 
 public class Addition {
 	// add two numbers
+	//verifying git hub
 
 	public void add(int a, int b) {
 		System.out.println(a + b);
