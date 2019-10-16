@@ -19,12 +19,14 @@ public class WTExample {
 
 		for (int i = 1; i <= rows.size(); i++) {
 			List<WebElement> cols = driver.findElements
-		(By.xpath(".//table[@class='results']/tbody/tr[" + i + "]/td"));
+		(By.xpath(".//table[@class='results']/tbody/t"
+				+ "[" + i + "]/td"));
 
 			for (int j = 1; j < cols.size(); j++) {
 				WebElement ele = driver
 						.findElement(By.xpath
-		(".//table[@class='results']/tbody/tr[" + i + "]/td[" + j + "]"));
+		(".//table[@class='results']/tbody/tr[" + i + "]"
+				+ "/td[" + j + "]"));
 
 				System.out.print(ele.getText());
 				System.out.print("--");
